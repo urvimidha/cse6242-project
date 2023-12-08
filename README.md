@@ -1,10 +1,7 @@
-# cse6242-project
-Sentiment Analysis of Airbnb Reviews
-
 # Sentiment Analysis on Airbnb Reviews
+cse6242-project
 
 ### Problem
-
 Vacationers searching for a place to stay are limited to a star-based review or reading through dozens, sometimes, hundreds of reviews.
 
 ### Importance
@@ -26,3 +23,13 @@ scores were then averaged for each listing, calculating an overall sentiment sco
 As illustrated in the bar graph labeled “City Analysis”, VADER and TextBlob produced a similar distribution of sentiment analysis scores. The blue lines represent the average of star-based ratings left by reviewers for each city. The yellow lines are the average of the TextBlob analysis, and the red lines are the average of the VADER analysis.
 
 ![image](https://github.com/urvimidha/cse6242-project/blob/main/images/city_analysis.png)
+
+We observed that VADER tended to assign more extreme scores, while TextBlob scored more conservatively around 0.
+
+![image](https://github.com/urvimidha/cse6242-project/blob/main/images/example_table.png)
+
+### Results
+The resulting interactive dashboard presents the user with a multitude of options to personalize their Airbnb search. Listings are displayed as dots assigned a color by the -1 [Red] to 1 [Green] color spectrum based on the sentiment score. The user has the option to filter the algorithm, sentiment score, state, and city to further personalize the search. We also experimented with a wordcloud output on a mouseover to show commonly used words in positive and negative comments.
+
+![image](https://github.com/urvimidha/cse6242-project/blob/main/images/US_map_listing_score.png)
+
